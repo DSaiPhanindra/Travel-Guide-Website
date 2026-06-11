@@ -29,6 +29,11 @@ async function getWeather() {
         document.getElementById("humidity").innerHTML =
             data.main.humidity + "%";
 
+        document.getElementById("weatherSection")
+        .scrollIntoView({
+            behavior: "smooth"
+        });
+
         document.getElementById("map").src =
         `https://maps.google.com/maps?q=${city}&t=&z=10&ie=UTF8&iwloc=&output=embed`;
 
