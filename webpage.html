@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Guide</title>
+
+    <link rel="stylesheet" href="webpage.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+
+        <div class="logo">
+            <img src="dragon-logo.png" alt="Travel Guide" width="50" height="auto">
+            Travel Guide
+        </div>
+
+        <div class="nav-links">
+            <a href="webpage.html" class="active">Home</a>
+            <a href="webabout.html">About</a>
+            <a href="webcontact.html">Contact</a>
+            <a href="weblogin.html">Login</a>
+        </div>
+
+    </nav>
+</header>
+
+<section class="hero">
+
+    <h1>Explore the World</h1>
+
+    <p>Find Weather, Maps and Travel Information</p>
+
+    <div class="search-box">
+        
+        <input
+        type="text"
+        id="cityInput"
+        placeholder="Enter City Name">
+        <button onclick="getWeather()">
+            Search
+        </button>
+    </div>
+
+</section>
+
+<section class="weather-container">
+
+<div class="card">
+    <h2>🌡 Temperature</h2>
+    <p id="temperature">--</p>
+</div>
+
+<div class="card">
+    <h2>☁ Weather</h2>
+    <p id="weather">--</p>
+</div>
+
+<div class="card">
+    <h2>💨 Wind Speed</h2>
+    <p id="wind">--</p>
+</div>
+
+<div class="card">
+    <h2>💧 Humidity</h2>
+    <p id="humidity">--</p>
+</div>
+
+</section>
+
+<section class="map-section">
+
+<h2>Location Map</h2>
+
+<iframe
+id="map"
+src="https://maps.google.com/maps?q=india&t=&z=5&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+</section>
+
+<section class="places">
+
+<h2>Top Tourist Attractions</h2>
+
+<ul>
+    <li>Taj Mahal</li>
+    <li>Charminar</li>
+    <li>Gateway of India</li>
+    <li>Red Fort</li>
+</ul>
+
+</section>
+
+<section class="tips">
+
+<h2>Travel Tips</h2>
+
+<div class="card">
+    Carry water and keep emergency contacts.
+</div>
+
+<div class="card">
+    Check weather before travelling.
+</div>
+
+<div class="card">
+    Keep copies of important documents.
+</div>
+
+</section>
+
+<footer>
+    <p>© 2026 Travel Guide Website</p>
+</footer>
+<script src="webscript.js"></script>
+</body>
+</html>
